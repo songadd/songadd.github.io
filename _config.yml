@@ -1,38 +1,63 @@
-# ----------- CONFIGURABLE START -----------
-title:            "LiberXue|FullStack|独立开发者|jekyll blog|GitHub blog"
-description:      "Full Stack独立开发者|欢迎来到 LiberXue「角落」侃侃理想、谈谈人生、敲敲代码。"
-url:              https://liberxue.github.io # 域名
-signoff:          "LiberXue" # Your name
-facebook_appid:   #liberxue
-google_analytics: UA-101222464-1
-share:            true 
-# 分页
-paginate: 15
-paginate_path: "liberxuepage:num"
-gems: [jekyll-paginate]
-links:
-  - name:         首页
-    url:          /
-    external:     false
-  - name:         书籍
-    url:          /book
-    external:     false
-  - name:         旅游
-    url:          /road
-    external:     false
-  - name:         归档
-    url:          /archives
-    external:     false
-  - name:         标签
-    url:          /tags
-    external:     false
-  - name:         关于
-    url:          /about
-    external:     false
-# ------------ CONFIGURABLE END ------------
+# Site settings
+title: Freelancer
+email: your-email@domain.com
+url: https://example.github.io
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+keywords: "your keywords, separated by commas"
+skills: "Web Developer - Graphic Artist - User Experience Designer"
+meta_author: LastName FirstName
 
-#permalink:        /:categories/:title.html
-permalink: /:year/:month/:day/:title.html
-defaults:
-  - values:
-      layout: "default"
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: Dr. Henry Jekyll
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/jekyllrb
+  - title: facebook
+    url:
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: bitbucket
+    url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
